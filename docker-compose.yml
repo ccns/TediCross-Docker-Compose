@@ -1,0 +1,8 @@
+version: '1'
+services:
+    tedicross:
+        build: .
+        working_dir: /app
+        environment:
+            - NODE_ENV=production
+        command: "npm start"
