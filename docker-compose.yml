@@ -9,7 +9,9 @@ services:
         working_dir: /app
         command: "npm start"
         secrets:
-            - tedicross-settings.yaml
+            - source: tedicross-settings.yaml
+              target: /app/settings.yaml
+              mode: 0666
 secrets:
     tedicross-settings.yaml:
         external: true
