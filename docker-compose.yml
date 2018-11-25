@@ -1,7 +1,11 @@
 version: "3.4"
 services:
     tedicross:
-        build: .
+        image: tsunderechen/tedicross-docker
+        deploy:
+            replicas: 1
+            restart_policy:
+                condition: on-failure
         working_dir: /app
         environment:
             - NODE_ENV=production
