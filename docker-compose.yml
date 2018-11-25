@@ -7,7 +7,7 @@ services:
             restart_policy:
                 condition: on-failure
         working_dir: /app
-        command: "cp /run/secrets/tedicross-settings.yaml /app/settings.yaml && npm start"
+        command: "npm start"
         secrets:
             - tedicross-settings.yaml
 secrets:
