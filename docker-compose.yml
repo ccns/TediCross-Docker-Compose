@@ -13,5 +13,5 @@ services:
               target: /app/settings.yaml
               mode: 0666
 configs:
-    tedicross-settings.yaml:
+    TediCross-Config:
         external: true
