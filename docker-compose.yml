@@ -6,3 +6,9 @@ services:
         environment:
             - NODE_ENV=production
         command: "npm start"
+        secrets:
+            - source: tedicross-settings.yaml
+              target: /app/settings.yaml
+secrets:
+    tedicross-settings.yaml:
+        external: true
