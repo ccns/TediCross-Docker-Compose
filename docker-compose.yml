@@ -11,6 +11,7 @@ services:
         secrets:
             - source: tedicross-settings.yaml
               target: /app/settings.yaml
+              mode: 0666
 secrets:
     tedicross-settings.yaml:
         external: true
